@@ -1,0 +1,118 @@
+<html>
+    <body>
+        <title>Tick Tac Toe</title>
+        <style>
+            body{
+                background-color: rgb(153, 217, 234);
+            }
+            #heading{
+                font-family:'Courier New', Courier, monospace;
+                text-align: center;
+                margin-top: 25px;
+                color:darkblue;
+                font-size: 40px;
+            }
+            section{
+                margin-top: 31%;
+                font-size: 25px;
+                font-family: 'Brush Script MT', cursive;
+                color:blueviolet ;
+                text-align: center;
+            }
+
+            div{
+                width: 15%;
+                height: 20%;
+                /* background-image: url("blank.png"); */
+            }
+            .container{
+                margin-left: 26%;
+                margin-top: 0%;
+            }
+            #one{
+                background-image: url("blank.png");
+                position: absolute;
+                border-right: 3px solid black;
+                border-bottom: 3px solid black;
+            }
+            #two{
+                position: absolute;  
+                margin-left:196px;
+                border-right: 3px solid black;
+                border-bottom: 3px solid black;
+                background-image: url("blank.png");
+            }
+            #three{
+                position: absolute;
+                margin-left:392px;
+                border-bottom: 3px solid black;
+                background-image: url("blank.png");
+            }
+            #four{
+                position: absolute;
+                margin-top: 180px;
+                border-right: 3px solid black;
+                border-bottom: 3px solid black;
+                background-image: url("blank.png");
+            }
+            #five{
+                position: absolute;
+                margin-top: 180px;
+                margin-left: 196px;
+                border-right: 3px solid black;
+                border-bottom: 3px solid black;
+                background-image: url("blank.png");
+            }
+            #six{
+                position: absolute;
+                margin-top: 180px;
+                margin-left: 392px;
+                border-bottom: 3px solid black;
+                background-image: url("blank.png");
+            }
+            #seven{
+                position: absolute;
+                margin-top: 360px;
+                border-right: 3px solid black;
+                background-image: url("blank.png");
+            }
+            #eight{
+                position: absolute;
+                margin-top: 360px;
+                border-right: 3px solid black;
+                background-image: url("blank.png");
+                margin-left: 196px;
+            }
+            #nine{
+                position: absolute;
+                margin-top: 360px;
+                margin-left: 392px;
+                background-image: url("blank.png");
+            }
+
+
+        </style>
+    </body>
+    <head>
+        <h1 id="heading">Tick Tac Toe</br>&nbsp&nbsp&nbsp- by yours truly</h1>
+        <div class ="container">
+            <div id="one" onclick="set(one)"></div>
+            <div id="two" onclick="set(two)"></div>
+            <div id="three" onclick="set(three)"></div>
+        
+            <div id="four" onclick="set(four)"></div>
+            <div id="five" onclick="set(five)"></div>
+            <div id="six" onclick="set(six)"></div>
+            
+            <div id="seven" onclick="set(seven)"></div>
+            <div id="eight" onclick="set(eight)"></div>
+            <div id="nine" onclick="set(nine)"></div>
+        </div>
+        <section>
+            <h1 id="winner">X</h1>
+            <p id="ins"></p>
+        </section>
+        <script src="index.js"></script>
+
+    </head>
+</html>
